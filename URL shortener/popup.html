@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>URL Shortener</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      width: 250px;
+    }
+    input {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 5px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .short-url {
+      margin-top: 10px;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+  <h2>URL Shortener</h2>
+  <input type="text" id="long-url" placeholder="Enter long URL here" />
+  <button id="shorten-btn">Generate Short URL</button>
+  <p id="short-url" class="short-url"></p>
+  <p id="copy-msg" style="color: green;"></p>
+  <script src="popup.js"></script>
+</body>
+</html>
